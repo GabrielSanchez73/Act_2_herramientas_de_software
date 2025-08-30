@@ -73,11 +73,11 @@ web/
 25. border - Bordes
 26. cursor - Tipo de cursor
 
-## Cómo Ejecutar
+## Ejecutar
 1. Abre el archivo index.html en tu navegador
-2. O usa Live Server en VS Code/Cursor
-
+2. O usa Live Server en VS Code
 ## Autor
+Gabriel Sanchez
 Desarrollado para la actividad de desarrollo web con HTML y CSS.
 
 ## Licencia
