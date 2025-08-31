@@ -1,4 +1,4 @@
-# �� Sistema de Gestión de Productos
+# 🏢 Sistema de Gestión de Productos
 
 Sistema web completo para la gestión de inventario, productos y categorías desarrollado como actividad académica.
 
@@ -119,13 +119,13 @@ node test-filtros-precio.js
 
 ## 👨‍💻 Desarrollador
 
-**Gabriel Sánchez** - Estudiante de Desarrollo de Software
+**Gabriel Sánchez** - Estudiante de Ingeniería de Software
 
 ## 📅 Fecha
 
-Diciembre 2024
+31/08/2025
 
-## 📝 Licencia
+## �� Licencia
 
 Proyecto académico - Universidad
 
