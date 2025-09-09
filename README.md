@@ -35,7 +35,7 @@ web/
 11. <article> - Artículos
 12. <footer> - Pie de página
 13. <nav> - Navegación
-14. <h1>, <h2>, <h3> - Títulos
+14. "<h1>, <h2>, <h3> - Títulos"
 15. <p> - Párrafos
 16. <ul>, <li> - Listas
 17. <a> - Enlaces
