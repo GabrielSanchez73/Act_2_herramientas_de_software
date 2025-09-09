@@ -1,0 +1,69 @@
+/* Fuente principal */
+:root {
+  --primary: hsl(171, 66%, 44%);
+  --secondary: hsl(233, 100%, 69%);
+  --dark: hsl(210, 10%, 33%);
+  --gray: hsl(201, 11%, 66%);
+  --bg: #ffffff;
+  --container: 1100px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  padding: 0; margin: 0;
+  font-family: 'Bai Jamjuree', system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--dark);
+  background: var(--bg);
+}
+
+img { max-width: 100%; display: block; }
+
+.container { width: min(92%, var(--container)); margin: 0 auto; }
+
+h1, h2, h3 { color: var(--dark); line-height: 1.2; }
+.lead { color: var(--gray); font-size: 1.125rem; }
+
+.hero { text-align: center; padding: 4rem 0 2rem; }
+.hero__logo { width: 90px; margin: 0 auto 1.5rem; }
+
+.cta { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem; }
+.btn { padding: .9rem 1.4rem; border-radius: 100px; text-decoration: none; color: #fff; font-weight: 700; box-shadow: 0 8px 16px rgba(0,0,0,.08); transition: transform .15s ease; display: inline-block; }
+.btn:active { transform: translateY(1px); }
+.btn--primary { background: var(--primary); }
+.btn--secondary { background: var(--secondary); }
+
+.intro { text-align: center; padding: 2rem 0; }
+
+.grid { display: grid; gap: 2rem; align-items: center; }
+.grid--2cols { grid-template-columns: 1fr; }
+.grid--3cols { grid-template-columns: 1fr; }
+
+.features { padding: 3rem 0; }
+.features__image { max-width: 520px; margin-inline: auto; }
+.features__list article { margin-bottom: 1.25rem; }
+.features__list h3 { margin: .2rem 0 .4rem; }
+.features__list p { color: var(--gray); }
+
+.access { text-align: center; padding: 3rem 0; }
+
+.workflow { text-align: center; padding: 3rem 0; }
+.card { padding: 1.25rem; }
+.card h3 { margin: .75rem 0 .5rem; }
+.card p { color: var(--gray); }
+
+.cta-final { text-align: center; padding: 3rem 0 4rem; }
+
+.footer { background: #f6f7f9; padding: 2rem 0; }
+.footer__content { display: grid; gap: 1rem; align-items: center; justify-items: center; text-align: center; }
+.footer__logo { width: 50px; }
+.footer__nav { display: flex; gap: 1.5rem; }
+.footer__nav a { color: var(--dark); text-decoration: none; }
+.footer__social { display: flex; gap: 1rem; }
+
+@media (min-width: 768px) {
+  .grid--2cols { grid-template-columns: .9fr 1.1fr; }
+  .grid--3cols { grid-template-columns: repeat(3, 1fr); }
+  .footer__content { grid-template-columns: auto 1fr auto; text-align: left; justify-items: stretch; }
+  .footer__nav { justify-content: center; }
+}
