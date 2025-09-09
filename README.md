@@ -1,23 +1,26 @@
-# 🏢 Sistema de Gestión de Productos
+# Sistema de Gestión de Productos
 
 Sistema web completo para la gestión de inventario, productos y categorías desarrollado como actividad académica.
 
-## ✨ Características Principales
+## Características principales
 
 - **Gestión completa de productos** (CRUD)
 - **Sistema de categorías inteligente**
 - **Filtros de búsqueda avanzados**
 - **Dashboard con estadísticas**
 - **Interfaz moderna y responsive**
+- **Accesibilidad básica (WCAG 2.1)**
+- **Prototipado documentado**
+- **Adaptabilidad multi-dispositivo**
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías utilizadas
 
 - **Frontend**: React.js + Material-UI
 - **Backend**: Node.js + Express.js
 - **Base de Datos**: MySQL
 - **Lenguaje**: JavaScript
 
-## 🚀 Instalación
+## Instalación
 
 ### Requisitos
 - Node.js 18+
@@ -55,36 +58,46 @@ Sistema web completo para la gestión de inventario, productos y categorías des
    cd client && npm start
    ```
 
-## 📱 Acceso
+## Acceso
 
 - **Frontend**: http://localhost:4000
 - **Backend**: http://localhost:5000
 
-## 📊 Funcionalidades
+## Funcionalidades
 
 ### Gestión de Productos
 - Agregar, editar, eliminar productos
 - Campos: nombre, descripción, precio, categoría, stock, proveedor
 - Validaciones de formulario
+- **Accesibilidad**: aria-labels, navegación por teclado
 
 ### Sistema de Categorías
 - Selector desplegable de categorías existentes
 - Creación de nuevas categorías en tiempo real
 - Sincronización automática
+- **UX mejorada**: Indicadores visuales y validación
 
 ### Filtros de Búsqueda
 - Filtro por nombre
 - Filtro por categoría
 - Filtros de precio (mínimo y máximo)
 - Filtros combinados
+- **Indicadores visuales**: Chips de filtros activos
 
-### Dashboard
+### Panel de estadísticas
 - Contador de productos totales
 - Stock disponible
 - Precio promedio
 - Número de categorías
+- **Diseño responsive**: Se adapta a todos los dispositivos
 
-## 🏗️ Estructura del Proyecto
+### Prototipado y Diseño
+- **Wireframes**: Diseño de baja fidelidad
+- **Mockups**: Diseño de alta fidelidad
+- **User flows**: Flujos de usuario documentados
+- **Decisiones de diseño**: Justificación de elecciones técnicas
+
+## Estructura del proyecto
 
 ```
 ├── client/                 # Frontend React
@@ -97,11 +110,18 @@ Sistema web completo para la gestión de inventario, productos y categorías des
 │   ├── index.js           # Servidor Express
 │   ├── db.js              # Conexión MySQL
 │   └── database.sql       # Script de base de datos
+├── docs/                   # Documentación adicional
+│   ├── wireframes/        # Wireframes de baja fidelidad
+│   ├── mockups/           # Mockups de alta fidelidad
+│   ├── flujos/            # User flows
+│   └── ADAPTABILIDAD_MULTIDISPOSITIVO.md
 ├── README.md
+├── README_PROTOTIPO.md     # Documentación de prototipado
+├── GUIA_VIDEO_YOUTUBE.md  # Guía para video de demostración
 └── iniciar-sistema.bat    # Script de inicio para Windows
 ```
 
-## 🧪 Pruebas
+## Pruebas
 
 ```bash
 # Pruebas generales del sistema
@@ -111,24 +131,27 @@ node test-system.js
 node test-filtros-precio.js
 ```
 
-## 📚 Documentación Adicional
+## Documentación adicional
 
 - `README_MEJORAS.md` - Detalles de implementación
 - `SISTEMA_FILTROS.md` - Guía de filtros
+- `README_PROTOTIPO.md` - **NUEVO** - Documentación de prototipado y diseño
+- `docs/ADAPTABILIDAD_MULTIDISPOSITIVO.md` - **NUEVO** - Evidencias responsive
+- `GUIA_VIDEO_YOUTUBE.md` - **NUEVO** - Guía para video de demostración
 - `iniciar-sistema.bat` - Script de inicio automático
 
-## 👨‍💻 Desarrollador
+## Autor
 
 **Gabriel Sánchez** - Estudiante de Ingeniería de Software
 
-## 📅 Fecha
+## Fecha
 
 31/08/2025
 
-## �� Licencia
+## Licencia
 
 Proyecto académico - Universidad
 
 ---
 
-**Desarrollado con ❤️ para el aprendizaje y desarrollo profesional**
+Desarrollado para el aprendizaje y desarrollo profesional

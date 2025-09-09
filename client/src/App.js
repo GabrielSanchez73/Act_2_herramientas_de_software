@@ -513,6 +513,8 @@ function App() {
               <Button 
                 variant="contained" 
                 onClick={aplicarFiltros} 
+                aria-label="Aplicar filtros de búsqueda"
+                title="Buscar productos con los filtros seleccionados"
                 sx={{ 
                   flex: 1,
                   minHeight: '56px',
@@ -533,6 +535,8 @@ function App() {
               <Button 
                 variant="outlined" 
                 onClick={limpiarFiltros} 
+                aria-label="Limpiar todos los filtros"
+                title="Quitar todos los filtros y mostrar todos los productos"
                 sx={{ 
                   flex: 1,
                   minHeight: '56px',
@@ -583,6 +587,8 @@ function App() {
           startIcon={<AddIcon />}
           onClick={toggleDialog}
           size="large"
+          aria-label="Agregar nuevo producto al inventario"
+          title="Hacer clic para abrir formulario de nuevo producto"
           sx={{ 
             background: 'linear-gradient(45deg, #27ae60 30%, #2ecc71 90%)',
             boxShadow: '0 3px 5px 2px rgba(46, 204, 113, .3)',
@@ -763,6 +769,8 @@ function App() {
                         color="primary"
                         onClick={() => editarProducto(idx)}
                         size="small"
+                        aria-label={`Editar producto ${producto.nombre}`}
+                        title={`Editar producto ${producto.nombre}`}
                         sx={{ 
                           '&:hover': {
                             backgroundColor: 'rgba(33, 150, 243, 0.1)',
@@ -777,6 +785,8 @@ function App() {
                         color="error"
                         onClick={() => eliminarProducto(idx)}
                         size="small"
+                        aria-label={`Eliminar producto ${producto.nombre}`}
+                        title={`Eliminar producto ${producto.nombre}`}
                         sx={{ 
                           '&:hover': {
                             backgroundColor: 'rgba(244, 67, 54, 0.1)',
@@ -797,8 +807,15 @@ function App() {
       </TableContainer>
 
       {/* Diálogo para agregar/editar producto */}
-      <Dialog open={openDialog} onClose={toggleDialog} maxWidth="md" fullWidth>
-        <DialogTitle>
+      <Dialog 
+        open={openDialog} 
+        onClose={toggleDialog} 
+        maxWidth="md" 
+        fullWidth
+        aria-labelledby="producto-dialog-title"
+        aria-describedby="producto-dialog-description"
+      >
+        <DialogTitle id="producto-dialog-title">
           {editIndex !== null ? 'Editar Producto' : 'Agregar Nuevo Producto'}
         </DialogTitle>
         <form onSubmit={guardarProducto}>
@@ -906,8 +923,17 @@ function App() {
             </Grid>
           </DialogContent>
           <DialogActions>
-            <Button onClick={toggleDialog}>Cancelar</Button>
-            <Button type="submit" variant="contained">
+            <Button 
+              onClick={toggleDialog}
+              aria-label="Cancelar y cerrar formulario"
+            >
+              Cancelar
+            </Button>
+            <Button 
+              type="submit" 
+              variant="contained"
+              aria-label={editIndex !== null ? 'Actualizar producto' : 'Guardar nuevo producto'}
+            >
               {editIndex !== null ? 'Actualizar' : 'Guardar'}
             </Button>
           </DialogActions>
